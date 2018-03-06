@@ -1,0 +1,58 @@
+/* 
+  Localizable.strings
+  Ecoa
+
+  Created by Orlando Amorim on 05/03/2018.
+  Copyright © 2018 GoNuvem. All rights reserved.
+*/
+
+// Oauth - English - en.lproj/Localizable.strings
+
+"oauth.mail"                    = "Mail";
+"oauth.password"                = "Password (min. 8 characters)";
+"oauth.passwordConfirmation"    = "Password Confirmation";
+"oauth.userName"                = "Username";
+"oauth.login"                   = "LOGIN";
+"oauth.signIn"                  = "Sign In";
+"oauth.signUp"                  = "Sign Up";
+"oauth.signOut"                 = "Sign Out";
+"oauth.welcome"                 = "Welcome to UFPIEvents";
+"oauth.terms"                   = "By signing up I accept the terms and condictions";
+"oauth.termsOfUse"              = "Terms of Use";
+"oauth.privacyPolicy"           = "Privacy Policy";
+"ouath.createAccount"           = "Create an Account";
+
+// OauthAlert - English - en.lproj/Localizable.strings
+
+"oauthAlert.mail"                   = "Mail is required";
+"oauthAlert.password"               = "Password (min. 8 characters) is required";
+"oauthAlert.passwordConfirmation"   = "Password Confirmation (min. 8 characters) is required";
+"oauthAlert.userName"               = "Username is required";
+"oauthAlert.userNameExists"         = "Username already exists";
+"oauthAlert.emailPasswordError"     = "Email or passord wrong";
+"oauthAlert.signOutConfirmation"    = "Do you really want to leave Sense?";
+
+// Alert - English - en.lproj/Localizable.strings
+
+"alert.change"      = "Change";
+"alert.error"       = "Error";
+"alert.delete"      = "Delete";
+"alert.wait"        = "Wait";
+"alert.add"         = "Add";
+"alert.update"      = "Update";
+"alert.updating"    = "Updating...";
+"alert.cancel"      = "Cancel";
+"alert.createdAt"   = "Created At";
+"alert.ok"          = "Ok";
+"alert.attention"   = "Attention";
+"alert.reset"       = "Reset";
+"alert.ops"         = "Ops...";
+"alert.hello"       = "Hello";
+"alert.yes"         = "Yes";
+"alert.no"          = "No";
+
+// Info - English - en.lproj/Localizable.strings
+
+"info.version"      = "Version";
+"info.contactUs"    = "Contact Us";
+"info.licenses"     = "Licenses";

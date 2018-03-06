@@ -11,10 +11,15 @@
 		18386AC820464B190000E08F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386AC720464B190000E08F /* MasterViewController.swift */; };
 		18386ACA20464B190000E08F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386AC920464B190000E08F /* DetailViewController.swift */; };
 		18386ACD20464B1A0000E08F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18386ACB20464B1A0000E08F /* Main.storyboard */; };
-		18386ACF20464B1A0000E08F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18386ACE20464B1A0000E08F /* Assets.xcassets */; };
 		18386AD220464B1A0000E08F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18386AD020464B1A0000E08F /* LaunchScreen.storyboard */; };
 		18386ADD20464B1A0000E08F /* EcoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386ADC20464B1A0000E08F /* EcoaTests.swift */; };
 		18386AE820464B1A0000E08F /* EcoaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386AE720464B1A0000E08F /* EcoaUITests.swift */; };
+		1888A411204E1BB4003BFFBF /* Ecoa+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888A410204E1BB4003BFFBF /* Ecoa+Extensions.swift */; };
+		1888A429204E2039003BFFBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1888A427204E2039003BFFBF /* Localizable.strings */; };
+		1888A42E204E2343003BFFBF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1888A42B204E2343003BFFBF /* Info.plist */; };
+		1888A42F204E2343003BFFBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1888A42C204E2343003BFFBF /* GoogleService-Info.plist */; };
+		1888A430204E2343003BFFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1888A42D204E2343003BFFBF /* Assets.xcassets */; };
+		F2BA2AA7BF9404F0450F3FE3 /* Pods_Ecoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEDEAF40C4FC45488BE8DD2 /* Pods_Ecoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,15 +45,24 @@
 		18386AC720464B190000E08F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		18386AC920464B190000E08F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		18386ACC20464B1A0000E08F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18386ACE20464B1A0000E08F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18386AD120464B1A0000E08F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		18386AD320464B1A0000E08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18386AD820464B1A0000E08F /* EcoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18386ADC20464B1A0000E08F /* EcoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoaTests.swift; sourceTree = "<group>"; };
 		18386ADE20464B1A0000E08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18386AE320464B1A0000E08F /* EcoaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18386AE720464B1A0000E08F /* EcoaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoaUITests.swift; sourceTree = "<group>"; };
 		18386AE920464B1A0000E08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1888A410204E1BB4003BFFBF /* Ecoa+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ecoa+Extensions.swift"; sourceTree = "<group>"; };
+		1888A412204E1D97003BFFBF /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		1888A413204E1D97003BFFBF /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		1888A428204E2039003BFFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Ecoa/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1888A42A204E2164003BFFBF /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "Ecoa/pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		1888A42B204E2343003BFFBF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Ecoa/Info.plist; sourceTree = "<group>"; };
+		1888A42C204E2343003BFFBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Ecoa/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1888A42D204E2343003BFFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Ecoa/Assets.xcassets; sourceTree = "<group>"; };
+		8EEDEAF40C4FC45488BE8DD2 /* Pods_Ecoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ecoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B53300CF3C539DD2802C469 /* Pods-Ecoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ecoa/Pods-Ecoa.debug.xcconfig"; sourceTree = "<group>"; };
+		B214783AFC148B33185099B4 /* Pods-Ecoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecoa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ecoa/Pods-Ecoa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2BA2AA7BF9404F0450F3FE3 /* Pods_Ecoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,9 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				18386AC420464B190000E08F /* Ecoa */,
+				1888A420204E1F32003BFFBF /* Supporting Files */,
 				18386ADB20464B1A0000E08F /* EcoaTests */,
 				18386AE620464B1A0000E08F /* EcoaUITests */,
 				18386AC320464B190000E08F /* Products */,
+				452638A821F18F774794553C /* Pods */,
+				E940CCA5FD5E429A22616FF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +117,10 @@
 		18386AC420464B190000E08F /* Ecoa */ = {
 			isa = PBXGroup;
 			children = (
-				18386AC520464B190000E08F /* AppDelegate.swift */,
-				18386AC720464B190000E08F /* MasterViewController.swift */,
-				18386AC920464B190000E08F /* DetailViewController.swift */,
-				18386ACB20464B1A0000E08F /* Main.storyboard */,
-				18386ACE20464B1A0000E08F /* Assets.xcassets */,
-				18386AD020464B1A0000E08F /* LaunchScreen.storyboard */,
-				18386AD320464B1A0000E08F /* Info.plist */,
+				1888A40C204E1B29003BFFBF /* AppDelegate */,
+				1888A40E204E1B6B003BFFBF /* Storyboard */,
+				1888A40D204E1B3A003BFFBF /* ViewControllers */,
+				1888A40F204E1B8C003BFFBF /* Extensions */,
 			);
 			path = Ecoa;
 			sourceTree = "<group>";
@@ -128,6 +143,68 @@
 			path = EcoaUITests;
 			sourceTree = "<group>";
 		};
+		1888A40C204E1B29003BFFBF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				18386AC520464B190000E08F /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1888A40D204E1B3A003BFFBF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18386AC720464B190000E08F /* MasterViewController.swift */,
+				18386AC920464B190000E08F /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1888A40E204E1B6B003BFFBF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				18386ACB20464B1A0000E08F /* Main.storyboard */,
+				18386AD020464B1A0000E08F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1888A40F204E1B8C003BFFBF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1888A410204E1BB4003BFFBF /* Ecoa+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1888A420204E1F32003BFFBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1888A42B204E2343003BFFBF /* Info.plist */,
+				1888A42C204E2343003BFFBF /* GoogleService-Info.plist */,
+				1888A42D204E2343003BFFBF /* Assets.xcassets */,
+				1888A427204E2039003BFFBF /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		452638A821F18F774794553C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B53300CF3C539DD2802C469 /* Pods-Ecoa.debug.xcconfig */,
+				B214783AFC148B33185099B4 /* Pods-Ecoa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E940CCA5FD5E429A22616FF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EEDEAF40C4FC45488BE8DD2 /* Pods_Ecoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18386AEC20464B1A0000E08F /* Build configuration list for PBXNativeTarget "Ecoa" */;
 			buildPhases = (
+				331EE089CDD4BBF5AA1A1714 /* [CP] Check Pods Manifest.lock */,
 				18386ABE20464B190000E08F /* Sources */,
 				18386ABF20464B190000E08F /* Frameworks */,
 				18386AC020464B190000E08F /* Resources */,
+				1F158DE75C287938E83830D2 /* [CP] Embed Pods Frameworks */,
+				D905F53BB65AD268CC6C2364 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +297,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 18386AB920464B190000E08F;
 			productRefGroup = 18386AC320464B190000E08F /* Products */;
@@ -235,8 +316,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1888A42E204E2343003BFFBF /* Info.plist in Resources */,
 				18386AD220464B1A0000E08F /* LaunchScreen.storyboard in Resources */,
-				18386ACF20464B1A0000E08F /* Assets.xcassets in Resources */,
+				1888A42F204E2343003BFFBF /* GoogleService-Info.plist in Resources */,
+				1888A429204E2039003BFFBF /* Localizable.strings in Resources */,
+				1888A430204E2343003BFFBF /* Assets.xcassets in Resources */,
 				18386ACD20464B1A0000E08F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +341,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F158DE75C287938E83830D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ecoa/Pods-Ecoa-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ecoa/Pods-Ecoa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		331EE089CDD4BBF5AA1A1714 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ecoa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D905F53BB65AD268CC6C2364 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ecoa/Pods-Ecoa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18386ABE20464B190000E08F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +407,7 @@
 				18386ACA20464B190000E08F /* DetailViewController.swift in Sources */,
 				18386AC820464B190000E08F /* MasterViewController.swift in Sources */,
 				18386AC620464B190000E08F /* AppDelegate.swift in Sources */,
+				1888A411204E1BB4003BFFBF /* Ecoa+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +447,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				18386ACC20464B1A0000E08F /* Base */,
+				1888A412204E1D97003BFFBF /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -312,8 +456,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				18386AD120464B1A0000E08F /* Base */,
+				1888A413204E1D97003BFFBF /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1888A427204E2039003BFFBF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1888A428204E2039003BFFBF /* Base */,
+				1888A42A204E2164003BFFBF /* pt-BR */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -323,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -367,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -380,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -418,7 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -428,13 +584,14 @@
 		};
 		18386AED20464B1A0000E08F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B53300CF3C539DD2802C469 /* Pods-Ecoa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6N5QCUQA9;
-				INFOPLIST_FILE = Ecoa/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Ecoa/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gonuvem.ecoa.Ecoa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gonuvem.ecoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -443,13 +600,14 @@
 		};
 		18386AEE20464B1A0000E08F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B214783AFC148B33185099B4 /* Pods-Ecoa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6N5QCUQA9;
-				INFOPLIST_FILE = Ecoa/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Ecoa/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gonuvem.ecoa.Ecoa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gonuvem.ecoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

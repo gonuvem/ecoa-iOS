@@ -22,6 +22,8 @@ class MasterViewController: UITableViewController {
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
         navigationItem.rightBarButtonItem = addButton
         if let split = splitViewController {
+            split.delegate = self
+            
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
@@ -89,7 +91,18 @@ class MasterViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
-
-
 }
 
+extension MasterViewController: UISplitViewControllerDelegate {
+    // MARK: - Split view
+    
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
+        guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
+        guard let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController else { return false }
+        if topAsDetailController.detailItem == nil {
+            // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
+            return true
+        }
+        return false
+    }
+}
