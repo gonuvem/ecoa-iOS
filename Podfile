@@ -11,4 +11,6 @@ target 'Ecoa' do
   # Pods for Ecoa
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
+  pod 'SwiftColor'
+  pod 'TwitterKit'
 end

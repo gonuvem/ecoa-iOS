@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
@@ -15,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        EcoaTheme.applyAppearanceDefaults()
+        TWTRTwitter.sharedInstance().start(withConsumerKey:"pJnUZaf9RYJesqYi0HLoJ6XuV", consumerSecret:"86Bt75pj6jKA39XKS4HqsAGV3Sxi5YtbkLAwoZ07GnUhiO8LS7")
+
+        FirebaseApp.configure()
         return true
     }
 

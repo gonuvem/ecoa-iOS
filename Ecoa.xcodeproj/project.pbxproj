@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180E77D82052C48C0017CF2F /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E77D72052C48C0017CF2F /* TwitterViewController.swift */; };
+		180E77E420530F150017CF2F /* UITabBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E77E320530F150017CF2F /* UITabBar+Extensions.swift */; };
+		180E77E6205310330017CF2F /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E77E5205310330017CF2F /* MainTabBar.swift */; };
 		18386AC620464B190000E08F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386AC520464B190000E08F /* AppDelegate.swift */; };
 		18386AC820464B190000E08F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386AC720464B190000E08F /* MasterViewController.swift */; };
 		18386ACA20464B190000E08F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386AC920464B190000E08F /* DetailViewController.swift */; };
@@ -14,9 +17,12 @@
 		18386AD220464B1A0000E08F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18386AD020464B1A0000E08F /* LaunchScreen.storyboard */; };
 		18386ADD20464B1A0000E08F /* EcoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386ADC20464B1A0000E08F /* EcoaTests.swift */; };
 		18386AE820464B1A0000E08F /* EcoaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386AE720464B1A0000E08F /* EcoaUITests.swift */; };
+		1874CA94204E2E1E0028DB90 /* EcoaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874CA93204E2E1E0028DB90 /* EcoaTheme.swift */; };
+		1874CA96204E34410028DB90 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874CA95204E34400028DB90 /* UIColor+Extensions.swift */; };
+		1874CA9A204E3AFF0028DB90 /* KeynoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874CA98204E3AFF0028DB90 /* KeynoteTableViewCell.swift */; };
+		1874CA9D204E4A860028DB90 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874CA9C204E4A860028DB90 /* GradientView.swift */; };
 		1888A411204E1BB4003BFFBF /* Ecoa+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888A410204E1BB4003BFFBF /* Ecoa+Extensions.swift */; };
 		1888A429204E2039003BFFBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1888A427204E2039003BFFBF /* Localizable.strings */; };
-		1888A42E204E2343003BFFBF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1888A42B204E2343003BFFBF /* Info.plist */; };
 		1888A42F204E2343003BFFBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1888A42C204E2343003BFFBF /* GoogleService-Info.plist */; };
 		1888A430204E2343003BFFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1888A42D204E2343003BFFBF /* Assets.xcassets */; };
 		F2BA2AA7BF9404F0450F3FE3 /* Pods_Ecoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEDEAF40C4FC45488BE8DD2 /* Pods_Ecoa.framework */; };
@@ -40,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180E77D72052C48C0017CF2F /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		180E77E320530F150017CF2F /* UITabBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extensions.swift"; sourceTree = "<group>"; };
+		180E77E5205310330017CF2F /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		18386AC220464B190000E08F /* Ecoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18386AC520464B190000E08F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18386AC720464B190000E08F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +61,10 @@
 		18386AE320464B1A0000E08F /* EcoaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18386AE720464B1A0000E08F /* EcoaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoaUITests.swift; sourceTree = "<group>"; };
 		18386AE920464B1A0000E08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1874CA93204E2E1E0028DB90 /* EcoaTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoaTheme.swift; sourceTree = "<group>"; };
+		1874CA95204E34400028DB90 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		1874CA98204E3AFF0028DB90 /* KeynoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeynoteTableViewCell.swift; sourceTree = "<group>"; };
+		1874CA9C204E4A860028DB90 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		1888A410204E1BB4003BFFBF /* Ecoa+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ecoa+Extensions.swift"; sourceTree = "<group>"; };
 		1888A412204E1D97003BFFBF /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		1888A413204E1D97003BFFBF /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -120,6 +133,8 @@
 				1888A40C204E1B29003BFFBF /* AppDelegate */,
 				1888A40E204E1B6B003BFFBF /* Storyboard */,
 				1888A40D204E1B3A003BFFBF /* ViewControllers */,
+				1874CA97204E3AB30028DB90 /* Cells */,
+				1874CA92204E2DF30028DB90 /* UI */,
 				1888A40F204E1B8C003BFFBF /* Extensions */,
 			);
 			path = Ecoa;
@@ -143,6 +158,23 @@
 			path = EcoaUITests;
 			sourceTree = "<group>";
 		};
+		1874CA92204E2DF30028DB90 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1874CA93204E2E1E0028DB90 /* EcoaTheme.swift */,
+				1874CA9C204E4A860028DB90 /* GradientView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1874CA97204E3AB30028DB90 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1874CA98204E3AFF0028DB90 /* KeynoteTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		1888A40C204E1B29003BFFBF /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +188,8 @@
 			children = (
 				18386AC720464B190000E08F /* MasterViewController.swift */,
 				18386AC920464B190000E08F /* DetailViewController.swift */,
+				180E77D72052C48C0017CF2F /* TwitterViewController.swift */,
+				180E77E5205310330017CF2F /* MainTabBar.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -173,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				1888A410204E1BB4003BFFBF /* Ecoa+Extensions.swift */,
+				1874CA95204E34400028DB90 /* UIColor+Extensions.swift */,
+				180E77E320530F150017CF2F /* UITabBar+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -316,7 +352,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1888A42E204E2343003BFFBF /* Info.plist in Resources */,
 				18386AD220464B1A0000E08F /* LaunchScreen.storyboard in Resources */,
 				1888A42F204E2343003BFFBF /* GoogleService-Info.plist in Resources */,
 				1888A429204E2039003BFFBF /* Localizable.strings in Resources */,
@@ -351,12 +386,18 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ecoa/Pods-Ecoa-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftColor/SwiftColor.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftColor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,9 +429,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ecoa/Pods-Ecoa-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -405,9 +451,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				18386ACA20464B190000E08F /* DetailViewController.swift in Sources */,
+				180E77E420530F150017CF2F /* UITabBar+Extensions.swift in Sources */,
+				1874CA96204E34410028DB90 /* UIColor+Extensions.swift in Sources */,
 				18386AC820464B190000E08F /* MasterViewController.swift in Sources */,
+				180E77E6205310330017CF2F /* MainTabBar.swift in Sources */,
 				18386AC620464B190000E08F /* AppDelegate.swift in Sources */,
 				1888A411204E1BB4003BFFBF /* Ecoa+Extensions.swift in Sources */,
+				1874CA94204E2E1E0028DB90 /* EcoaTheme.swift in Sources */,
+				180E77D82052C48C0017CF2F /* TwitterViewController.swift in Sources */,
+				1874CA9D204E4A860028DB90 /* GradientView.swift in Sources */,
+				1874CA9A204E3AFF0028DB90 /* KeynoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

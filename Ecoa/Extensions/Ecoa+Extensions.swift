@@ -13,7 +13,8 @@ enum Ecoa {
     
     // Image Names
     enum images: String, ImageRepresentable {
-        case placeholder = "placeholder"
+        case placeholder    = "placeholder"
+        case twitter        = "twitter"
     }
     
     // Localizable Strings
