@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="euO-TI-jYI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="euO-TI-jYI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
@@ -26,12 +26,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-38" y="-630"/>
+            <point key="canvasLocation" x="-47" y="-732"/>
         </scene>
         <!--Detail-->
         <scene sceneID="yUG-lL-AsK">
             <objects>
-                <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="Ecoa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detail" id="JEX-9P-axG" customClass="KeynoteViewController" customModule="Ecoa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,7 @@
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
+                    <navigationItem key="navigationItem" id="mOI-FS-AaM"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="0XM-y9-sOw" id="deQ-Na-JPF"/>
                     </connections>
@@ -80,7 +80,7 @@
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
             <objects>
-                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="Ecoa" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="KeynotesViewController" customModule="Ecoa" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="r7i-6Z-zg0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,29 +94,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter-share" translatesAutoresizingMaskIntoConstraints="NO" id="aAo-8e-3mb">
-                                            <rect key="frame" x="0.0" y="-1" width="375" height="201.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                         </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzY-VN-ZhF" customClass="GradientView" customModule="Ecoa" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="134" width="375" height="66"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="66" id="83q-5n-3z9"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                                    <color key="value" white="0.0" alpha="0.58826519691780821" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                                    <color key="value" white="0.0" alpha="0.51749785958904104" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
-                                                    <real key="value" value="0.0"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
-                                                    <real key="value" value="1"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presenter Name • 09:41" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07A-ws-R9U">
                                             <rect key="frame" x="16" y="174" width="343" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -131,19 +110,18 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="bzY-VN-ZhF" firstAttribute="centerX" secondItem="cvJ-vO-OPj" secondAttribute="centerX" id="0HC-XM-bs7"/>
                                         <constraint firstItem="07A-ws-R9U" firstAttribute="leading" secondItem="cvJ-vO-OPj" secondAttribute="leadingMargin" id="JMD-7f-OLs"/>
+                                        <constraint firstItem="aAo-8e-3mb" firstAttribute="top" secondItem="cvJ-vO-OPj" secondAttribute="top" id="JW9-5d-8Dq"/>
+                                        <constraint firstItem="aAo-8e-3mb" firstAttribute="centerX" secondItem="cvJ-vO-OPj" secondAttribute="centerX" id="ONt-ql-rCZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="aAo-8e-3mb" secondAttribute="bottom" id="Oj3-sy-7yI"/>
+                                        <constraint firstItem="aAo-8e-3mb" firstAttribute="centerY" secondItem="cvJ-vO-OPj" secondAttribute="centerY" id="RCC-Jm-KqH"/>
                                         <constraint firstItem="lpe-Wq-8nn" firstAttribute="trailing" secondItem="cvJ-vO-OPj" secondAttribute="trailingMargin" id="Rr4-Og-Ozv"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="bzY-VN-ZhF" secondAttribute="bottom" constant="-11" id="TDy-IE-TXB"/>
                                         <constraint firstItem="lpe-Wq-8nn" firstAttribute="leading" secondItem="cvJ-vO-OPj" secondAttribute="leadingMargin" id="cSr-AR-JXK"/>
-                                        <constraint firstItem="aAo-8e-3mb" firstAttribute="top" secondItem="cvJ-vO-OPj" secondAttribute="topMargin" constant="-12" id="d4r-IW-uSZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="aAo-8e-3mb" secondAttribute="trailing" id="cvD-jl-n6A"/>
                                         <constraint firstItem="07A-ws-R9U" firstAttribute="trailing" secondItem="cvJ-vO-OPj" secondAttribute="trailingMargin" id="ier-yU-mw6"/>
                                         <constraint firstItem="07A-ws-R9U" firstAttribute="bottom" secondItem="cvJ-vO-OPj" secondAttribute="bottomMargin" id="jVp-8X-bMB"/>
-                                        <constraint firstItem="aAo-8e-3mb" firstAttribute="centerY" secondItem="cvJ-vO-OPj" secondAttribute="centerY" id="kAS-RM-naR"/>
-                                        <constraint firstItem="aAo-8e-3mb" firstAttribute="trailing" secondItem="bzY-VN-ZhF" secondAttribute="trailing" id="oAa-XG-Vdz"/>
                                         <constraint firstItem="07A-ws-R9U" firstAttribute="top" secondItem="lpe-Wq-8nn" secondAttribute="bottom" id="sBT-xH-KEU"/>
-                                        <constraint firstItem="aAo-8e-3mb" firstAttribute="leading" secondItem="cvJ-vO-OPj" secondAttribute="leading" id="sth-Il-wqg"/>
-                                        <constraint firstItem="aAo-8e-3mb" firstAttribute="leading" secondItem="bzY-VN-ZhF" secondAttribute="leading" id="v7v-5N-M68"/>
+                                        <constraint firstItem="aAo-8e-3mb" firstAttribute="leading" secondItem="cvJ-vO-OPj" secondAttribute="leading" id="yVt-m6-79V"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <viewLayoutGuide key="safeArea" id="hmA-le-MKH"/>
@@ -164,11 +142,11 @@
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8"/>
+                    <navigationItem key="navigationItem" id="Zdf-7t-Un8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="706.39999999999998" y="-631.0344827586207"/>
+            <point key="canvasLocation" x="709" y="-731"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Q6d-0Q-0f6">
@@ -215,7 +193,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOd-c9-DrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46" y="814"/>
+            <point key="canvasLocation" x="68" y="1106"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
@@ -250,7 +228,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i7w-YD-zaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-894" y="814"/>
+            <point key="canvasLocation" x="-743" y="1106"/>
         </scene>
     </scenes>
     <resources>
@@ -259,6 +237,6 @@
         <image name="twitter-share" width="435" height="375"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tll-UG-LXB"/>
+        <segue reference="kog-xV-Mdt"/>
     </inferredMetricsTieBreakers>
 </document>

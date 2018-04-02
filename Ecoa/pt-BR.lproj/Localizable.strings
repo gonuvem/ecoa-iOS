@@ -56,3 +56,7 @@
 "info.version"      = "Versão";
 "info.contactUs"    = "Fale Conosco";
 "info.licenses"     = "Licenças";
+
+// Keynotes - Portuguese - pt-BR.lproj/Localizable.strings
+
+"keynotes.title"    = "Painéis";

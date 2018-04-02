@@ -56,3 +56,7 @@
 "info.version"      = "Version";
 "info.contactUs"    = "Contact Us";
 "info.licenses"     = "Licenses";
+
+// Keynotes - English - en.lproj/Localizable.strings
+
+"keynotes.title"    = "Keynotes";

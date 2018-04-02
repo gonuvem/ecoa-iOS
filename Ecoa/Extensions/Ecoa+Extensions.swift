@@ -69,6 +69,10 @@ enum Ecoa {
             case licenses   = "info.licenses"
             case copyright  = "© 2018 GoNuvem. All rights reserved."
         }
+        
+        enum keynotes: String, LocalizeRepresentable  {
+            case title    = "keynotes.title"
+        }
     }
 }
 

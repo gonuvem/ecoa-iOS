@@ -8,9 +8,9 @@
 
 import UIKit
 
-class MasterViewController: UITableViewController {
+class KeynotesViewController: UITableViewController {
 
-    var detailViewController: DetailViewController? = nil
+    var detailViewController: KeynoteViewController? = nil
     var objects = [Any]()
 
     override func viewDidLoad() {
@@ -23,7 +23,7 @@ class MasterViewController: UITableViewController {
             split.delegate = self
             
             let controllers = split.viewControllers
-            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? KeynoteViewController
         }
     }
 
@@ -43,7 +43,7 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
 //                let object = objects[indexPath.row] as! NSDate
-                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                let controller = (segue.destination as! UINavigationController).topViewController as! KeynoteViewController
 //                controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
@@ -58,7 +58,7 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return 4//objects.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -88,8 +88,9 @@ class MasterViewController: UITableViewController {
     }
 }
 
-extension MasterViewController {
+extension KeynotesViewController {
     fileprivate func setupUI() {
+        self.title = Ecoa.localizable.keynotes.title.localized
         tableView.backgroundColor = UIColor.ecoa.tabBar.background
     }
     
@@ -98,12 +99,12 @@ extension MasterViewController {
     }
 }
 
-extension MasterViewController: UISplitViewControllerDelegate {
+extension KeynotesViewController: UISplitViewControllerDelegate {
     // MARK: - Split view
     
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
         guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
-        guard let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController else { return false }
+        guard let topAsDetailController = secondaryAsNavController.topViewController as? KeynoteViewController else { return false }
         if topAsDetailController.detailItem == nil {
             // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
             return true

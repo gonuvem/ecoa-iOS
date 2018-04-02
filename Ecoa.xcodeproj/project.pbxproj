@@ -11,8 +11,8 @@
 		180E77E420530F150017CF2F /* UITabBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E77E320530F150017CF2F /* UITabBar+Extensions.swift */; };
 		180E77E6205310330017CF2F /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E77E5205310330017CF2F /* MainTabBar.swift */; };
 		18386AC620464B190000E08F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386AC520464B190000E08F /* AppDelegate.swift */; };
-		18386AC820464B190000E08F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386AC720464B190000E08F /* MasterViewController.swift */; };
-		18386ACA20464B190000E08F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386AC920464B190000E08F /* DetailViewController.swift */; };
+		18386AC820464B190000E08F /* KeynotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386AC720464B190000E08F /* KeynotesViewController.swift */; };
+		18386ACA20464B190000E08F /* KeynoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386AC920464B190000E08F /* KeynoteViewController.swift */; };
 		18386ACD20464B1A0000E08F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18386ACB20464B1A0000E08F /* Main.storyboard */; };
 		18386AD220464B1A0000E08F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18386AD020464B1A0000E08F /* LaunchScreen.storyboard */; };
 		18386ADD20464B1A0000E08F /* EcoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386ADC20464B1A0000E08F /* EcoaTests.swift */; };
@@ -51,8 +51,8 @@
 		180E77E5205310330017CF2F /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		18386AC220464B190000E08F /* Ecoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18386AC520464B190000E08F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18386AC720464B190000E08F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		18386AC920464B190000E08F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		18386AC720464B190000E08F /* KeynotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeynotesViewController.swift; sourceTree = "<group>"; };
+		18386AC920464B190000E08F /* KeynoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeynoteViewController.swift; sourceTree = "<group>"; };
 		18386ACC20464B1A0000E08F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18386AD120464B1A0000E08F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18386AD820464B1A0000E08F /* EcoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,8 +186,8 @@
 		1888A40D204E1B3A003BFFBF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				18386AC720464B190000E08F /* MasterViewController.swift */,
-				18386AC920464B190000E08F /* DetailViewController.swift */,
+				18386AC720464B190000E08F /* KeynotesViewController.swift */,
+				18386AC920464B190000E08F /* KeynoteViewController.swift */,
 				180E77D72052C48C0017CF2F /* TwitterViewController.swift */,
 				180E77E5205310330017CF2F /* MainTabBar.swift */,
 			);
@@ -307,7 +307,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = GoNuvem;
 				TargetAttributes = {
 					18386AC120464B190000E08F = {
@@ -450,10 +450,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18386ACA20464B190000E08F /* DetailViewController.swift in Sources */,
+				18386ACA20464B190000E08F /* KeynoteViewController.swift in Sources */,
 				180E77E420530F150017CF2F /* UITabBar+Extensions.swift in Sources */,
 				1874CA96204E34410028DB90 /* UIColor+Extensions.swift in Sources */,
-				18386AC820464B190000E08F /* MasterViewController.swift in Sources */,
+				18386AC820464B190000E08F /* KeynotesViewController.swift in Sources */,
 				180E77E6205310330017CF2F /* MainTabBar.swift in Sources */,
 				18386AC620464B190000E08F /* AppDelegate.swift in Sources */,
 				1888A411204E1BB4003BFFBF /* Ecoa+Extensions.swift in Sources */,
@@ -541,6 +541,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -548,6 +549,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -599,6 +601,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -606,6 +609,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

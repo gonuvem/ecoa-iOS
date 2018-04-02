@@ -15,6 +15,11 @@ extension UIColor {
             static let background   = Color(byteRed: 1, green: 17, blue: 50)
             static let tint         = Color(byteRed: 118, green: 167, blue: 229)
         }
+        
+        struct keynoteCell {
+            static let titleLabel   = Color.white
+            static let detailLabel  = Color(byteRed: 153, green: 151, blue: 151)
+        }
     }
 }
 

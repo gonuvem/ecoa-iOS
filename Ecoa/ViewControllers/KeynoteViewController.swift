@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class KeynoteViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
