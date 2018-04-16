@@ -15,6 +15,8 @@ enum Ecoa {
     enum images: String, ImageRepresentable {
         case placeholder    = "placeholder"
         case twitter        = "twitter"
+        case ecoa           = "ecoa"
+        case ecoaAros       =  "ecoaAros"
     }
     
     // Localizable Strings
@@ -63,15 +65,22 @@ enum Ecoa {
             case no         = "alert.no"
         }
         
-        enum info: String, LocalizeRepresentable  {
-            case version    = "info.version"
-            case contactUs  = "info.contactUs"
-            case licenses   = "info.licenses"
-            case copyright  = "© 2018 GoNuvem. All rights reserved."
+        enum keynotes: String, LocalizeRepresentable {
+            case title    = "keynotes.title"
         }
         
-        enum keynotes: String, LocalizeRepresentable  {
-            case title    = "keynotes.title"
+        enum sponsors: String, LocalizeRepresentable {
+            case title = "sponsors.title"
+        }
+        
+        enum info: String, LocalizeRepresentable {
+            case title          = "info.title"
+            case detail         = "info.detail"
+            case version        = "info.version"
+            case contactUs      = "info.contactUs"
+            case licenses       = "info.licenses"
+            case copyright      = "© 2018 GoNuvem. All rights reserved."
+            case developedBy    = "info.developedBy"
         }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180376892072B1CA007E37DA /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180376882072B1CA007E37DA /* SponsorsViewController.swift */; };
 		180E77D82052C48C0017CF2F /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E77D72052C48C0017CF2F /* TwitterViewController.swift */; };
 		180E77E420530F150017CF2F /* UITabBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E77E320530F150017CF2F /* UITabBar+Extensions.swift */; };
 		180E77E6205310330017CF2F /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E77E5205310330017CF2F /* MainTabBar.swift */; };
@@ -17,6 +18,9 @@
 		18386AD220464B1A0000E08F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18386AD020464B1A0000E08F /* LaunchScreen.storyboard */; };
 		18386ADD20464B1A0000E08F /* EcoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386ADC20464B1A0000E08F /* EcoaTests.swift */; };
 		18386AE820464B1A0000E08F /* EcoaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18386AE720464B1A0000E08F /* EcoaUITests.swift */; };
+		183A8DCD207307B800043A4D /* SponsorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A8DCC207307B800043A4D /* SponsorCollectionViewCell.swift */; };
+		1842D6852084106C005A2C65 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842D6842084106C005A2C65 /* InfoViewController.swift */; };
+		1842D688208448B3005A2C65 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842D687208448B3005A2C65 /* UINavigationController+Extensions.swift */; };
 		1874CA94204E2E1E0028DB90 /* EcoaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874CA93204E2E1E0028DB90 /* EcoaTheme.swift */; };
 		1874CA96204E34410028DB90 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874CA95204E34400028DB90 /* UIColor+Extensions.swift */; };
 		1874CA9A204E3AFF0028DB90 /* KeynoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874CA98204E3AFF0028DB90 /* KeynoteTableViewCell.swift */; };
@@ -46,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180376882072B1CA007E37DA /* SponsorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
 		180E77D72052C48C0017CF2F /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		180E77E320530F150017CF2F /* UITabBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extensions.swift"; sourceTree = "<group>"; };
 		180E77E5205310330017CF2F /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
@@ -61,6 +66,9 @@
 		18386AE320464B1A0000E08F /* EcoaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18386AE720464B1A0000E08F /* EcoaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoaUITests.swift; sourceTree = "<group>"; };
 		18386AE920464B1A0000E08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183A8DCC207307B800043A4D /* SponsorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorCollectionViewCell.swift; sourceTree = "<group>"; };
+		1842D6842084106C005A2C65 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		1842D687208448B3005A2C65 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		1874CA93204E2E1E0028DB90 /* EcoaTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoaTheme.swift; sourceTree = "<group>"; };
 		1874CA95204E34400028DB90 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1874CA98204E3AFF0028DB90 /* KeynoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeynoteTableViewCell.swift; sourceTree = "<group>"; };
@@ -130,6 +138,7 @@
 		18386AC420464B190000E08F /* Ecoa */ = {
 			isa = PBXGroup;
 			children = (
+				1842D686208424CB005A2C65 /* Models */,
 				1888A40C204E1B29003BFFBF /* AppDelegate */,
 				1888A40E204E1B6B003BFFBF /* Storyboard */,
 				1888A40D204E1B3A003BFFBF /* ViewControllers */,
@@ -158,6 +167,13 @@
 			path = EcoaUITests;
 			sourceTree = "<group>";
 		};
+		1842D686208424CB005A2C65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1874CA92204E2DF30028DB90 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				1874CA98204E3AFF0028DB90 /* KeynoteTableViewCell.swift */,
+				183A8DCC207307B800043A4D /* SponsorCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -190,6 +207,8 @@
 				18386AC920464B190000E08F /* KeynoteViewController.swift */,
 				180E77D72052C48C0017CF2F /* TwitterViewController.swift */,
 				180E77E5205310330017CF2F /* MainTabBar.swift */,
+				180376882072B1CA007E37DA /* SponsorsViewController.swift */,
+				1842D6842084106C005A2C65 /* InfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -209,6 +228,7 @@
 				1888A410204E1BB4003BFFBF /* Ecoa+Extensions.swift */,
 				1874CA95204E34400028DB90 /* UIColor+Extensions.swift */,
 				180E77E320530F150017CF2F /* UITabBar+Extensions.swift */,
+				1842D687208448B3005A2C65 /* UINavigationController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -384,6 +404,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ecoa/Pods-Ecoa-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftColor/SwiftColor.framework",
@@ -393,6 +414,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftColor.framework",
@@ -451,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18386ACA20464B190000E08F /* KeynoteViewController.swift in Sources */,
+				180376892072B1CA007E37DA /* SponsorsViewController.swift in Sources */,
 				180E77E420530F150017CF2F /* UITabBar+Extensions.swift in Sources */,
 				1874CA96204E34410028DB90 /* UIColor+Extensions.swift in Sources */,
 				18386AC820464B190000E08F /* KeynotesViewController.swift in Sources */,
@@ -459,8 +482,11 @@
 				1888A411204E1BB4003BFFBF /* Ecoa+Extensions.swift in Sources */,
 				1874CA94204E2E1E0028DB90 /* EcoaTheme.swift in Sources */,
 				180E77D82052C48C0017CF2F /* TwitterViewController.swift in Sources */,
+				1842D6852084106C005A2C65 /* InfoViewController.swift in Sources */,
 				1874CA9D204E4A860028DB90 /* GradientView.swift in Sources */,
 				1874CA9A204E3AFF0028DB90 /* KeynoteTableViewCell.swift in Sources */,
+				1842D688208448B3005A2C65 /* UINavigationController+Extensions.swift in Sources */,
+				183A8DCD207307B800043A4D /* SponsorCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

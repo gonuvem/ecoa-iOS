@@ -51,12 +51,19 @@
 "alert.yes"         = "Sim";
 "alert.no"          = "Não";
 
-// Info - Portuguese - pt-BR.lproj/Localizable.strings
-
-"info.version"      = "Versão";
-"info.contactUs"    = "Fale Conosco";
-"info.licenses"     = "Licenças";
-
 // Keynotes - Portuguese - pt-BR.lproj/Localizable.strings
 
 "keynotes.title"    = "Painéis";
+
+// Sponsors - Portuguese - pt-BR.lproj/Localizable.strings
+
+"sponsors.title"    = "Patrocinadores";
+
+// Info - Portuguese - pt-BR.lproj/Localizable.strings
+
+"info.title"    = "ECOA";
+"info.detail"   = "O Encontro de Computação Aplicada à Inovação tem como objetivo apresentar de forma descontraída um pouco da realidade do mercado da tecnologia da informação. Iremos trazer desenvolvedores, game studios, hackers e startups inovadoras para bater um papo com a galera sobre seus projetos, novidades e o que está sendo usado de mais novo no mercado.";
+"info.version"      = "Versão";
+"info.contactUs"    = "Fale Conosco";
+"info.licenses"     = "Licenças";
+"info.developedBy"  = "Desenvolvido por GoNuvem";

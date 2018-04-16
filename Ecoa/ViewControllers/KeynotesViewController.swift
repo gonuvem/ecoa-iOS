@@ -40,7 +40,7 @@ class KeynotesViewController: UITableViewController {
     // MARK: - Segues
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetail" {
+        if segue.identifier == "ShowKeynote" {
             if let indexPath = tableView.indexPathForSelectedRow {
 //                let object = objects[indexPath.row] as! NSDate
                 let controller = (segue.destination as! UINavigationController).topViewController as! KeynoteViewController

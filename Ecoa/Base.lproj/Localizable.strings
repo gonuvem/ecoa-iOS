@@ -51,12 +51,20 @@
 "alert.yes"         = "Yes";
 "alert.no"          = "No";
 
-// Info - English - en.lproj/Localizable.strings
-
-"info.version"      = "Version";
-"info.contactUs"    = "Contact Us";
-"info.licenses"     = "Licenses";
-
 // Keynotes - English - en.lproj/Localizable.strings
 
 "keynotes.title"    = "Keynotes";
+
+// Sponsors - English - en.lproj/Localizable.strings
+
+"sponsors.title"    = "Sponsors";
+
+// Info - English - en.lproj/Localizable.strings
+
+"info.title"    = "ECOA";
+"info.detail"   = "The Applied Computing Innovation Conference aims to present in a relaxed way a little of the reality of the information technology market. We will bring developers, game studios, hackers and innovative startups to chat with the guys about their projects, news and what is being used as the newest in the market.";
+"info.version"      = "Version";
+"info.contactUs"    = "Contact Us";
+"info.licenses"     = "Licenses";
+"info.developedBy"  = "Developed by GoNuvem";
+

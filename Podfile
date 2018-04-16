@@ -13,4 +13,5 @@ target 'Ecoa' do
   pod 'Firebase/Messaging'
   pod 'SwiftColor'
   pod 'TwitterKit'
+  pod 'Eureka'
 end
