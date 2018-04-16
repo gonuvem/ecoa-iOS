@@ -14,6 +14,14 @@ class SponsorsViewController: UIViewController {
 
     @IBOutlet weak fileprivate var collectionView: UICollectionView!
     
+    fileprivate enum ItemsPerRow: CGFloat {
+        case portrait = 2
+        case landscape = 5
+    }
+    
+    fileprivate var itemsPerRow: ItemsPerRow = .portrait
+    fileprivate let sectionInsets = UIEdgeInsets(top: 12.0, left: 39.0, bottom: 12.0, right: 16.0)
+    
     var detailViewController: KeynoteViewController? = nil
     var objects = [Any]()
     
@@ -24,7 +32,7 @@ class SponsorsViewController: UIViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(SponsorCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.register(SponsorCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
         
@@ -67,20 +75,20 @@ extension SponsorsViewController: UICollectionViewDataSource {
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SponsorCollectionViewCell
         
         // Configure the cell
-        
+        cell.sponsorImageView.image = Ecoa.images.ecoa.image
         return cell
     }
 }
@@ -88,6 +96,18 @@ extension SponsorsViewController: UICollectionViewDataSource {
 extension SponsorsViewController: UICollectionViewDelegate {
 
     // MARK: UICollectionViewDelegate
+    
+    // change alpha when user touches cell
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.alpha = 0.65
+    }
+    
+    // change alpha back when user releases touch
+    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.alpha = 1
+    }
     
     /*
      // Uncomment this method to specify if the specified item should be highlighted during tracking
@@ -118,4 +138,39 @@ extension SponsorsViewController: UICollectionViewDelegate {
      }
      */
 
+}
+
+extension SponsorsViewController : UICollectionViewDelegateFlowLayout {
+    //1
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let orientation = UIApplication.shared.statusBarOrientation
+        if(orientation == .landscapeLeft || orientation == .landscapeRight) {
+            itemsPerRow = .landscape
+        } else{
+            itemsPerRow = .portrait
+        }
+        
+        //2
+        let paddingSpace = sectionInsets.left * (itemsPerRow.rawValue + 1)
+        let availableWidth = view.frame.width - paddingSpace
+        let widthPerItem = availableWidth / itemsPerRow.rawValue
+        
+        return CGSize(width: widthPerItem, height: widthPerItem)
+    }
+    
+    //3
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
+        return sectionInsets
+    }
+    
+    // 4
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return sectionInsets.left
+    }
 }

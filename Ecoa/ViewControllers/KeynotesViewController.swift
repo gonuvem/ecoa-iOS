@@ -63,7 +63,7 @@ class KeynotesViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "KeynoteCell", for: indexPath) as! KeynoteTableViewCell
-        cell.selectionStyle = .none
+        cell.selectionStyle = .default
         return cell
     }
     

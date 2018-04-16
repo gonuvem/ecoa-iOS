@@ -265,7 +265,7 @@
                                             <constraint firstItem="n7q-x2-ptB" firstAttribute="leading" secondItem="Kfn-Ue-Ncc" secondAttribute="leading" id="rNT-q4-EK6"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="sponsorImageView" destination="n7q-x2-ptB" id="bbH-NB-HRd"/>
+                                            <outlet property="sponsorImageView" destination="n7q-x2-ptB" id="wDQ-RI-m5I"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
